@@ -10,4 +10,36 @@
 
 @implementation CarStore
 
+NSMutableArray *_inventory;
+
+- (NSMutableArray *) inventory
+{
+    return _inventory;
+}
+
+- (void) setInventory:(NSMutableArray *)newInventory
+{
+    
+    if(_inventory == newInventory)
+    {
+        return;
+    }
+    
+    NSMutableArray *oldValue = _inventory;
+    _inventory = [newInventory retain];
+    [oldValue release];
+}
+
++(CarStore *)carStore
+{
+    CarStore *newStore = [[CarStore alloc] init];
+    return [newStore autorelease];
+}
+
+-(void) dealloc
+{
+    [_inventory release];
+    [super dealloc];
+}
+
 @end

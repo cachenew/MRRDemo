@@ -10,4 +10,9 @@
 
 @interface CarStore : NSObject
 
+-(NSMutableArray *) inventory;
+-(void) setInventory:(NSMutableArray *)newInventory;
+
++(CarStore *)carStore;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CarStore.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    [array addObject:@"Honda Amaze"];
+    
+    
+    NSLog(@"%@", array);
+    CarStore *superstore = [CarStore carStore];
+    [superstore setInventory:array];
+    [array release];
+    
+    // do other stuff...
+    
+    NSLog(@"%@", [superstore inventory]);
+    
+    //[superstore release];
 }
 
 - (void)didReceiveMemoryWarning {

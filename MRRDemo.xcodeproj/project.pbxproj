@@ -14,6 +14,7 @@
 		E889400C1ABAC8D900592179 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E889400B1ABAC8D900592179 /* Images.xcassets */; };
 		E889400F1ABAC8D900592179 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E889400D1ABAC8D900592179 /* LaunchScreen.xib */; };
 		E889401B1ABAC8D900592179 /* MRRDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E889401A1ABAC8D900592179 /* MRRDemoTests.m */; };
+		E88940261ABACCB900592179 /* CarStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E88940251ABACCB900592179 /* CarStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E88940141ABAC8D900592179 /* MRRDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRRDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88940191ABAC8D900592179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E889401A1ABAC8D900592179 /* MRRDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRRDemoTests.m; sourceTree = "<group>"; };
+		E88940241ABACCB900592179 /* CarStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarStore.h; sourceTree = "<group>"; };
+		E88940251ABACCB900592179 /* CarStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				E88940031ABAC8D900592179 /* AppDelegate.m */,
 				E88940051ABAC8D900592179 /* ViewController.h */,
 				E88940061ABAC8D900592179 /* ViewController.m */,
+				E88940241ABACCB900592179 /* CarStore.h */,
+				E88940251ABACCB900592179 /* CarStore.m */,
 				E88940081ABAC8D900592179 /* Main.storyboard */,
 				E889400B1ABAC8D900592179 /* Images.xcassets */,
 				E889400D1ABAC8D900592179 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88940261ABACCB900592179 /* CarStore.m in Sources */,
 				E88940071ABAC8D900592179 /* ViewController.m in Sources */,
 				E88940041ABAC8D900592179 /* AppDelegate.m in Sources */,
 				E88940011ABAC8D900592179 /* main.m in Sources */,
@@ -343,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MRRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MRRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
